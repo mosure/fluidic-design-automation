@@ -82,15 +82,26 @@ class Component:
             self.hypergraph = UndirectedHypergraph()
 
     def addLabels(self):
-        self.hypergraph.add_hyperedge(list(self.getNodes()), {
-            'type': EdgeTypes.LABEL
+        self.hypergraph.add_hyperedge(self.getNodes(), {
+            'type': EdgeTypes.LABEL,
+            'name': self.__class__.__name__
         })
 
     def getNodes(self):
         allValues = vars(self).values()
-        nodes = filter(lambda v: isinstance(v, Node), allValues)
+        nodes = set(filter(lambda v: isinstance(v, Node), allValues))
+
+        children = self.getComponents()
+        for child in children:
+            nodes.update(child.getNodes())
 
         return nodes
+
+    def getComponents(self):
+        allValues = vars(self).values()
+        children = filter(lambda v: isinstance(v, Component), allValues)
+
+        return children
 
 
 class PFET(Component):
@@ -207,19 +218,42 @@ class TestComponent(Component):
         self.addLabels()
 
 
-def visualize_component(component: Component):
-    from plot_hypergraph import plot_hypergraph_components
-    from halp.utilities.undirected_graph_transformations import to_networkx_graph
+def draw_hnx(component: Component):
+    import hypernetx as hnx
+    import matplotlib.pyplot as plt
 
-    nx_graph = to_networkx_graph(component.hypergraph)
-    plot_hypergraph_components(nx_graph)
+    node_count = len(component.hypergraph.get_node_set())
+
+    plt.figure(figsize=(node_count, node_count))
+
+    scenes = {}
+    for edge in component.hypergraph.get_hyperedge_id_set():
+        edge_name = edge
+        edge_attributes = component.hypergraph.get_hyperedge_attributes(edge)
+
+        if edge_attributes['type'] == EdgeTypes.LABEL:
+            edge_name = f'{edge_attributes["name"]} - {edge_name}'
+
+        scenes[edge_name] = map(lambda n: str(n), component.hypergraph.get_hyperedge_nodes(edge))
+
+    hnx_graph = hnx.Hypergraph(scenes)
+    hnx.draw(hnx_graph)
+
+    plt.savefig(f'output/{component.__class__.__name__}.png')
 
 def write_component(component: Component):
-    component.hypergraph.write('output.hypergraph')
+    component.hypergraph.write(f'output/{component.__class__.__name__}.hypergraph')
 
 
 if __name__ == "__main__":
-    model = TestComponent()
+    models = [
+        TestComponent(),
+        PFET(),
+        NOR(),
+        NAND(),
+        Snorlax()
+    ]
 
-    visualize_component(model)
-    write_component(model)
+    for model in models:
+        draw_hnx(model)
+        write_component(model)

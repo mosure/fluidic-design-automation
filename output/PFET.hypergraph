@@ -1,0 +1,2 @@
+nodes	weight
+n6 - drain,n5 - gate,n8 - gnd,n7 - source	1

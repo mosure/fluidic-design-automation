@@ -1,0 +1,16 @@
+nodes	weight
+n16 - source,n19 - drain	1
+n8 - gnd,n6 - drain,n5 - gate,n7 - source	1
+n3 - source,n6 - drain	1
+n1 - gate,n2 - drain,n4 - gnd,n3 - source	1
+n22 - a,n28 - s,n14 - gate	1
+n24 - out,n32 - qp,n10 - b,n20 - source,n5 - gate	1
+n15 - drain,n17 - gnd,n14 - gate,n16 - source	1
+n6 - drain,n11 - out,n8 - gnd,n7 - source,n10 - b,n5 - gate,n1 - gate,n2 - drain,n9 - a,n3 - source,n12 - vcc,n13 - gnd,n4 - gnd	1
+n1 - gate,n9 - a,n27 - r	1
+n4 - gnd,n21 - gnd,n17 - gnd,n8 - gnd,n13 - gnd,n30 - gnd,n26 - gnd	1
+n18 - gate,n19 - drain,n20 - source,n21 - gnd	1
+n18 - gate,n7 - source,n23 - b,n11 - out,n31 - q	1
+n21 - gnd,n10 - b,n30 - gnd,n16 - source,n26 - gnd,n19 - drain,n27 - r,n7 - source,n32 - qp,n1 - gate,n3 - source,n24 - out,n28 - s,n23 - b,n8 - gnd,n20 - source,n14 - gate,n25 - vcc,n15 - drain,n31 - q,n4 - gnd,n29 - vcc,n6 - drain,n17 - gnd,n11 - out,n22 - a,n5 - gate,n18 - gate,n2 - drain,n9 - a,n12 - vcc,n13 - gnd	1
+n29 - vcc,n2 - drain,n12 - vcc,n25 - vcc,n15 - drain	1
+n19 - drain,n21 - gnd,n17 - gnd,n25 - vcc,n15 - drain,n22 - a,n18 - gate,n24 - out,n23 - b,n16 - source,n20 - source,n14 - gate,n26 - gnd	1

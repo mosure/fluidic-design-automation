@@ -1,0 +1,9 @@
+nodes	weight
+n24 - source,n23 - drain,n22 - gate,n25 - gnd	1
+n26 - gate,n31 - b	1
+n24 - source,n32 - out,n28 - source	1
+n29 - gnd,n25 - gnd,n34 - gnd	1
+n25 - gnd,n28 - source,n22 - gate,n31 - b,n34 - gnd,n23 - drain,n33 - vcc,n30 - a,n27 - drain,n24 - source,n29 - gnd,n32 - out,n26 - gate	1
+n29 - gnd,n27 - drain,n28 - source,n26 - gate	1
+n22 - gate,n30 - a	1
+n23 - drain,n33 - vcc,n27 - drain	1
