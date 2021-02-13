@@ -1,10 +1,10 @@
 nodes	weight
-n10 - drain,n20 - vcc	1
-n9 - gate,n11 - source,n12 - gnd,n10 - drain	1
-n13 - gate,n18 - b	1
-n21 - gnd,n12 - gnd,n16 - gnd	1
-n20 - vcc,n17 - a,n11 - source,n12 - gnd,n19 - out,n9 - gate,n21 - gnd,n15 - source,n13 - gate,n18 - b,n14 - drain,n16 - gnd,n10 - drain	1
-n14 - drain,n15 - source,n16 - gnd,n13 - gate	1
+n11 - source,n12 - gnd,n10 - drain,n9 - gate	1
 n9 - gate,n17 - a	1
+n13 - gate,n18 - b	1
 n11 - source,n14 - drain	1
+n14 - drain,n12 - gnd,n20 - vcc,n10 - drain,n16 - gnd,n13 - gate,n9 - gate,n15 - source,n17 - a,n11 - source,n19 - out,n18 - b,n21 - gnd	1
+n10 - drain,n20 - vcc	1
 n15 - source,n19 - out	1
+n12 - gnd,n16 - gnd,n21 - gnd	1
+n15 - source,n14 - drain,n16 - gnd,n13 - gate	1

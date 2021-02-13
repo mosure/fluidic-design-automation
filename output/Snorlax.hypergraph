@@ -1,16 +1,16 @@
 nodes	weight
-n35 - gate,n37 - source,n36 - drain,n38 - gnd	1
-n45 - out,n38 - gnd,n37 - source,n44 - b,n40 - drain,n35 - gate,n42 - gnd,n46 - vcc,n36 - drain,n39 - gate,n47 - gnd,n41 - source,n43 - a	1
-n56 - a,n60 - gnd,n49 - drain,n52 - gate,n51 - gnd,n55 - gnd,n59 - vcc,n50 - source,n48 - gate,n58 - out,n57 - b,n54 - source,n53 - drain	1
-n55 - gnd,n54 - source,n53 - drain,n52 - gate	1
-n50 - source,n53 - drain	1
-n66 - qp,n39 - gate,n58 - out,n44 - b,n54 - source	1
-n36 - drain,n46 - vcc,n59 - vcc,n49 - drain,n63 - vcc	1
-n41 - source,n42 - gnd,n39 - gate,n40 - drain	1
-n55 - gnd,n38 - gnd,n51 - gnd,n42 - gnd,n60 - gnd,n47 - gnd,n64 - gnd	1
-n45 - out,n57 - b,n52 - gate,n41 - source,n65 - q	1
-n56 - a,n48 - gate,n62 - s	1
-n35 - gate,n61 - r,n43 - a	1
-n62 - s,n38 - gnd,n49 - drain,n44 - b,n63 - vcc,n51 - gnd,n42 - gnd,n47 - gnd,n58 - out,n65 - q,n53 - drain,n37 - source,n66 - qp,n56 - a,n60 - gnd,n52 - gate,n64 - gnd,n40 - drain,n46 - vcc,n36 - drain,n39 - gate,n59 - vcc,n48 - gate,n57 - b,n43 - a,n54 - source,n45 - out,n61 - r,n35 - gate,n55 - gnd,n50 - source,n41 - source	1
+n51 - gnd,n50 - source,n49 - drain,n48 - gate	1
+n54 - source,n53 - drain,n55 - gnd,n52 - gate	1
+n62 - s,n56 - a,n48 - gate	1
+n43 - a,n61 - r,n35 - gate	1
+n36 - drain,n37 - source,n38 - gnd,n35 - gate	1
+n50 - source,n54 - source,n53 - drain,n48 - gate,n59 - vcc,n49 - drain,n55 - gnd,n52 - gate,n56 - a,n51 - gnd,n57 - b,n58 - out,n60 - gnd	1
+n51 - gnd,n42 - gnd,n64 - gnd,n38 - gnd,n55 - gnd,n47 - gnd,n60 - gnd	1
 n37 - source,n40 - drain	1
-n50 - source,n51 - gnd,n48 - gate,n49 - drain	1
+n52 - gate,n39 - gate,n62 - s,n51 - gnd,n57 - b,n54 - source,n48 - gate,n64 - gnd,n38 - gnd,n59 - vcc,n47 - gnd,n65 - q,n41 - source,n46 - vcc,n58 - out,n37 - source,n60 - gnd,n43 - a,n50 - source,n53 - drain,n49 - drain,n55 - gnd,n63 - vcc,n40 - drain,n66 - qp,n42 - gnd,n61 - r,n36 - drain,n44 - b,n35 - gate,n56 - a,n45 - out	1
+n39 - gate,n54 - source,n66 - qp,n44 - b,n58 - out	1
+n43 - a,n36 - drain,n44 - b,n35 - gate,n38 - gnd,n47 - gnd,n39 - gate,n40 - drain,n41 - source,n46 - vcc,n42 - gnd,n45 - out,n37 - source	1
+n50 - source,n53 - drain	1
+n63 - vcc,n36 - drain,n46 - vcc,n59 - vcc,n49 - drain	1
+n41 - source,n57 - b,n45 - out,n52 - gate,n65 - q	1
+n39 - gate,n40 - drain,n41 - source,n42 - gnd	1

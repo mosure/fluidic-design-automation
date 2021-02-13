@@ -239,7 +239,7 @@ def draw_hnx(component: Component):
     hnx_graph = hnx.Hypergraph(scenes)
     hnx.draw(hnx_graph)
 
-    plt.savefig(f'output/{component.__class__.__name__}.png')
+    plt.savefig(f'output/{component.__class__.__name__}.svg')
 
 def write_component(component: Component):
     component.hypergraph.write(f'output/{component.__class__.__name__}.hypergraph')

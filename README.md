@@ -4,10 +4,10 @@ A fluidic schematic and layout library written in Python.
 
 ## Library
 
-![PFET](/output/PFET.png "PFET")
-![NOR](/output/NOR.png "NOR")
-![NAND](/output/NAND.png "NAND")
-![RS NOR LATCH](/output/Snorlax.png "RS NOR LATCH")
+![PFET](/output/PFET.svg "PFET")
+![NOR](/output/NOR.svg "NOR")
+![NAND](/output/NAND.svg "NAND")
+![RS NOR LATCH](/output/Snorlax.svg "RS NOR LATCH")
 
 
 ## References
