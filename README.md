@@ -7,7 +7,7 @@ A fluidic schematic and layout library written in Python.
 ![PFET](/output/PFET.svg "PFET")
 ![NOR](/output/NOR.svg "NOR")
 ![NAND](/output/NAND.svg "NAND")
-![RS NOR LATCH](/output/Snorlax.svg "RS NOR LATCH")
+![RS NOR LATCH](/output/Latch.svg "RS NOR LATCH")
 
 
 ## References

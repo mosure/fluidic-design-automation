@@ -1,9 +1,9 @@
 nodes	weight
-n27 - drain,n33 - vcc,n30 - a,n32 - out,n34 - gnd,n28 - source,n29 - gnd,n25 - gnd,n26 - gate,n23 - drain,n31 - b,n22 - gate,n24 - source	1
-n34 - gnd,n25 - gnd,n29 - gnd	1
-n23 - drain,n24 - source,n25 - gnd,n22 - gate	1
+n27 - drain,n26 - gate,n28 - source,n29 - gnd	1
+n25 - gnd,n34 - gnd,n29 - gnd	1
+n29 - gnd,n24 - source,n22 - gate,n34 - gnd,n31 - b,n33 - vcc,n26 - gate,n25 - gnd,n28 - source,n32 - out,n27 - drain,n23 - drain,n30 - a	1
+n25 - gnd,n22 - gate,n23 - drain,n24 - source	1
 n22 - gate,n30 - a	1
 n26 - gate,n31 - b	1
-n27 - drain,n33 - vcc,n23 - drain	1
-n28 - source,n24 - source,n32 - out	1
-n27 - drain,n28 - source,n26 - gate,n29 - gnd	1
+n27 - drain,n23 - drain,n33 - vcc	1
+n24 - source,n28 - source,n32 - out	1
